@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 
-public class SampleObj : MonoBehaviour {
+public class SampleObj : MonoBehaviour
+{
     GameObject pixelArtGenShape;
 
-    void Start () {
+    void Start()
+    {
         pixelArtGenShape = Instantiate(Resources.Load("Prefabs/PixelArtGenShape")) as GameObject;
         pixelArtGenShape.GetComponent<PixelArtGenShape>().
             Init(gameObject, GetComponent<PixelArtGen>().Generate());
     }
-	
-	void Update () {
+
+    void Update()
+    {
         var moveDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         var force = 1000f;
         var rb = GetComponent<Rigidbody2D>();
