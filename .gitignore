@@ -24,3 +24,8 @@ ExportedObj/
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
+
+#Visual Studio related
+/.vs/
+/Assets/UnityVS/
+UnityVS.meta
