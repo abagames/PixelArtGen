@@ -21,7 +21,7 @@ public class PixelArtGenShape : MonoBehaviour
         pixelRatio = pixelScale / pixelsPerUnit;
         angleInterval = 360.0f / rotationNum;
         var t = GetComponent<Transform>();
-        t.position = new Vector3(float.MinValue, float.MinValue);
+        t.position = new Vector3(float.MinValue * 0.1f, float.MinValue * 0.1f);
     }
 
     void Update()
