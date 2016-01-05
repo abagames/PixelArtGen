@@ -126,7 +126,7 @@ MonoBehaviour:
   seed: 5
   color: {r: 0.30882353, g: 1, b: 0.5137931, a: 1}
   isRotated: 1
-  texture: {fileID: 940262296}
+  texture: {fileID: 1193163308}
 --- !u!50 &61988627
 Rigidbody2D:
   serializedVersion: 2
@@ -167,7 +167,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!28 &940262296
+--- !u!28 &1193163308
 Texture2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
