@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using PixelArtGen;
 
 public class SampleObj : MonoBehaviour
 {
@@ -7,8 +8,8 @@ public class SampleObj : MonoBehaviour
     void Start()
     {
         pixelArtGenShape = Instantiate(Resources.Load("Prefabs/PixelArtGenShape")) as GameObject;
-        pixelArtGenShape.GetComponent<PixelArtGenShape>().
-            Init(gameObject, GetComponent<PixelArtGen>().Generate());
+        pixelArtGenShape.GetComponent<Shape>().
+            Init(gameObject, GetComponent<Generator>().Generate());
     }
 
     void Update()
